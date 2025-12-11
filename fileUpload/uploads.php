@@ -7,10 +7,10 @@ $conn = mysqli_connect($servername, $username, $password, $database);
 
 //get file detail
 $filename = $_FILES['myfile']['name'];
-$tempfile = $_FILES['myfile']['tmp_name'];
+$tempfile = $_FILES['myfile']['temp_name'];
 
 //uploads folder  (destination - correct path for image folder)
-$folder = "images/" . $filename;
+$folder = "picture/" . $filename;
 
 
 //file moves to uploads folder

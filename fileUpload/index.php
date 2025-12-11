@@ -30,9 +30,9 @@
     while ($row = mysqli_fetch_assoc($result)) {
 
         echo "<p>";
-        echo "<a href='images/" . $row['file_name'] . "' target='_blank'>" . $row['file_name'] . "</a>";
+        echo "<a href='picture/" . $row['file_name'] . "' target='_blank'>" . $row['file_name'] . "</a>";
 
-        echo "<img src='images/" . $row['file_name'] . "' width='200'>";
+        echo "<img src='picture/" . $row['file_name'] . "' width='200'>";
 
         echo "</p>";
     }
